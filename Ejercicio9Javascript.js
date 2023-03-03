@@ -9,15 +9,14 @@ class Padawan { constructor(nombre, planeta, edad, estatura){
 	this.edad = edad; 
 	this.estatura = estatura; 
 	}
-} 
-// La función actividadPadawan() clasifica y muestra en consola la actividad asignada al Padawan según su edad, sí es mayor a 15, manejo de sable, si es menor manejo de fuerza; 
+// El método actividadPadawan() clasifica y muestra en consola la actividad asignada al Padawan según su edad, sí es mayor a 15, manejo de sable, si es menor manejo de fuerza; 
 
-// Funcion erronea
-function actividadPadawan(){ 
-	this.edad < 15 ? 
-	console.log(`${this.nombre} debe aprender manejo de la fuerza.`) : 
-	 console.log(`${this.nombre} debe aprender manejo del sable de luz.`);
-	} 
+    actividadPadawan(){ 
+        this.edad < 15 ? 
+        console.log(`${this.nombre} debe aprender manejo de la fuerza.`) : 
+         console.log(`${this.nombre} debe aprender manejo del sable de luz.`);
+        }   
+} 
 
 //Declaramos los objetos
 
