@@ -6,7 +6,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ## Temas a tratar
 * Métodos de array 
-* Condicionales simples 
+* Condicionales 
 * Ciclo Foreach
 * *** 
 Todos los derechos reservados [Juan Pablo Jaramillo](https://github.com/HotSauce96)
