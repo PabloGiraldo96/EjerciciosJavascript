@@ -24,8 +24,8 @@ function generarPalabraAleatoria(length){
 // Con los métodos de arreglos Math.random para generar un aleatorio y Math.floor para redondearlo al número menor vamos a generar las edades aleatorias y códigos aleatorios
 
 for (let i = 0; i < 20; i++) {
-  edades.push(Math.floor(Math.random() * 100)); // Generamos un número entero aleatorio entre 0 y 99
-  codigos.push(generarPalabraAleatoria(3)); // Utilizamos la función hecha anteriormente para generar un código aleatorio de 3 letras o números. 
+  edades.push(Math.floor(Math.random() * 100)); // Generamos un número entero aleatorio entre 0 y 99 y con .push lo empujamos al arreglo vacío edades
+  codigos.push(generarPalabraAleatoria(3)); // Utilizamos la función hecha anteriormente para generar un código aleatorio de 3 letras o números y con .push lo empujamos al arreglo vacío codigo. 
 }
 
 // Buscamos la edad mayor ingresando al arreglo edades y con un ciclo for y un condicional confirmaremos si edades en su posición i es mayor a la variable creada edadMayor y si es así, le llevamos el valor a la variable edad Mayor y creamos una variable numero de repeticiones que estará en 1.
@@ -50,16 +50,14 @@ console.log("La edad mayor es " + edadMayor + " y se repite " + numRepeticiones 
 
 
 
-////Intentando hacer la misma función en flecha.
-//
-//const generarPalabraAleatoriaFlecha = () => {
-//	const letra = 'abcdefghijklmnopqrstuvwxyz123456789';
-//	let resultado ='';
-//  	for (let i = 0; i < length; i++) {
-//    const randomIndex = Math.floor(Math.random() * letra.length);
-//    resultado += letra[randomIndex];
-//  }
-//  return resultado;
-//}
-//
-//console.log(generarPalabraAleatoria(5));
+//funcion flecha de la función usada para generar el código aleatorio, el resto de requisitos se hacen con ciclos for.
+
+/*const generarPalabraAleatoria = (length) =>{
+	const letra = 'abcdefghijklmnopqrstuvwxyz123456789';
+	let resultado ='';
+  	for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * letra.length);
+    resultado += letra[randomIndex];
+  }
+  return resultado;
+}*/ 
