@@ -69,6 +69,47 @@ function encontrarSinAgua(mapas) {
 }
 
 
+// Bloque de funciones flecha
+
+//const sumarAgua = (mapas) => {
+//  let totalAgua = 0;
+//  for (let i = 0; i < mapas.length; i++) {
+//    totalAgua += mapas[i].volumenAgua;
+//  }
+//  return totalAgua;
+//}
+
+//const MultiplicarOxigeno = (mapas) => {
+//  let totalOxigeno = 0;
+//  for (let i = 0; i < mapas.length; i++) {
+//    totalOxigeno += mapas[i].nivelOxigeno;
+//  }
+//  return totalOxigeno * 100;
+//}
+
+//const encontrarOxigenoNegativo = (mapas) => {
+//  for (let i = 0; i < mapas.length; i++) {
+//    if (mapas[i].nivelOxigeno < 0) {
+//      console.log("El planeta: " + mapas[i].nombrePlaneta + " tiene un nivel de oxígeno negativo.");
+//      console.log("Información general:");
+//      console.log(mapas[i]);
+//      return true;
+//    }
+//  }
+//  return false;
+//}
+
+//const encontrarSinAgua = (mapas) => {
+//  for (let i = 0; i < mapas.length; i++) {
+//    if (mapas[i].volumenAgua === 0) {
+//      console.log("El planeta:  " + mapas[i].nombrePlaneta + " no tiene agua.");
+//      console.log(`La información que busca del mapa es: `);
+//      console.log(mapas[i]);
+//      return true;
+//    }
+//  }
+//  return false;
+//}
 
 
 
