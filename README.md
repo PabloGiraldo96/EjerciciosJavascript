@@ -8,5 +8,7 @@
 * Métodos de array 
 * Condicionales 
 * Ciclo Foreach
+* Arreglos de objetos
+* Operaciones con arreglos y estructuras de control
 * *** 
 Todos los derechos reservados [Juan Pablo Jaramillo](https://github.com/HotSauce96)
