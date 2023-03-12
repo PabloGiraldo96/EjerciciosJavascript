@@ -26,3 +26,11 @@ const padawan3 = new Padawan("Padawnsu", "Marte", 12, 1.57)
 
 
 padawan1.actividadPadawan();
+
+// Al realizar este punto con POO, el método actividadPadawan sería como la "funcion" dentro de la clase Padawan, si fuese una función normal, al pasarla a flecha se vería así: 
+
+//  const actividadPadawan = () => { 
+//         this.edad < 15 ? 
+//         console.log(`${this.nombre} debe aprender manejo de la fuerza.`) : 
+//          console.log(`${this.nombre} debe aprender manejo del sable de luz.`);
+//         }   
