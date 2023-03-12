@@ -5,10 +5,10 @@
 # Badges: 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ## Temas a tratar
-* Métodos de array 
-* Condicionales 
-* Ciclo Foreach
+* Array methods o métodos de arreglos
+* Estructuras de control 
 * Arreglos de objetos
+* Index o posición
 * Operaciones con arreglos y estructuras de control
 * *** 
 Todos los derechos reservados [Juan Pablo Jaramillo](https://github.com/HotSauce96)
