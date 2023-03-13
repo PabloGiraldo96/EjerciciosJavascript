@@ -1,16 +1,37 @@
 //Hacer listado de 15 mapas que tengan como atributos; nomrePlaneta, latitud, longitud, nivelOxigeno, volumenAgua.
 // Con dicha información muestre; 1. Cantidad de agua de los planetas | 2. totalOxigeno de los planetas * 100 | 3. encontrar planeta con nivel de oxigeno negativo y mostrarlo | 4. encontrar si algún planeta no tiene agua y mostrar su información.  
- 
-let mapas = [
-  {nombrePlaneta: "Planeta 1", latitud: 10, longitud: 20, nivelOxigeno: 50, volumenAgua: 100},
-  {nombrePlaneta: "Planeta 2", latitud: 30, longitud: 40, nivelOxigeno: -10, volumenAgua: 0},
-  {nombrePlaneta: "Planeta 3", latitud: 50, longitud: 60, nivelOxigeno: 80, volumenAgua: 200},
-  {nombrePlaneta: "Planeta 4", latitud: 70, longitud: 20, nivelOxigeno: 50, volumenAgua: 150},
-  {nombrePlaneta: "Planeta 5", latitud: 20, longitud: 80, nivelOxigeno: -250, volumenAgua: 450},
-  // ...
-  {nombrePlaneta: "Planeta 15", latitud: 170, longitud: 180, nivelOxigeno: -40, volumenAgua: 0}
-];
 
+//Creamos una función que nos devuelve una palabra aleatoria, toma como parametro el número de caracteres que queramos poner; toma las variables de letra (Casi todo el abecedario) y la variable resultado que se mantendrá vacía; luego con un ciclo for los llenamos aleatoriamente con los métodos Math.floor() y Math.random(), guardamos este resultado en la variable randomIndex, y luego la llevamos como valor de la variable resultado.
+
+function generarPalabraAleatoria(length){
+	const letra = 'abcdefghijklmnopqrstuvwxyz';
+	let resultado ='';
+  	for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * letra.length);
+    resultado += letra[randomIndex];
+  }
+  return resultado;
+}
+
+// Declaramos el arreglo de objetos mapas (Vacío)
+
+let mapas = [];
+
+//Declaramos el objeto mapa y sus atributos, para los atributos integer, los podemos generar como un número aleatorio de 1 a 100 con los métodos Math.floor() y Math.random() // Para el nombre del planeta usamos la función de arriba generarPalabraAleatoria
+//Los metemos dentro de un ciclo for que va a ir de 1 a 16 (contando así los 15 mapas que se solicitan) y llenando sus atributos de manera aleatoria. 
+
+for(i=1; i<16;i++){
+  mapa = {}
+  mapa["nombrePlaneta"] =  generarPalabraAleatoria(8)
+  mapa["latitud"] = Math.floor(Math.random() * 100)
+  mapa["longitud"]= Math.floor(Math.random() * 100)
+  mapa["nivelOxigeno"]= Math.floor(Math.random() * 100)
+  mapa["volumenAgua"]= Math.floor(Math.random() * 100)
+
+  mapas.push(mapa);
+}
+
+console.log(mapas)
 // La función sumarAgua toma como parámetro el arreglo mapas, inicia una variable de totalAgua en 0, e itera el número de valores del arreglo, la variable totaAgua es igual a el arreglo en su posición i.volumen de agua; se devuelve la variable totalAgua.
 function sumarAgua(mapas) {
   let totalAgua = 0;
